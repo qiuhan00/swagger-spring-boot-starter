@@ -40,7 +40,7 @@ public class SwaggerConfiguration {
 	
 	@Bean
 	public Docket createRestApi() {
-		log.info("====== 开启swagger starter ======");
+		log.info("==> 开启swagger starter");
 		return new Docket(DocumentationType.SWAGGER_2)
 //				.securitySchemes(securitySchemes())
 //				.securityContexts(securityContexts())
