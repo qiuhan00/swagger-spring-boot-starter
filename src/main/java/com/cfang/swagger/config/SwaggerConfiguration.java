@@ -30,7 +30,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableConfigurationProperties(SwaggerProperties.class)
-@ConditionalOnProperty(prefix = "swagger",name = "enable")
+@ConditionalOnProperty(prefix = "swagger",name = "enable", havingValue = "true")
 @EnableSwagger2
 @Slf4j
 public class SwaggerConfiguration {
